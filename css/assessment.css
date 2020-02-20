@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 15px;
+    width: 120px;
+}
+div{
+    padding: 30px;
+    margin: 5px;
+}
+html{
+    background-image: url("../images/back-ground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@media all and (min-width: 850px){
+
+    #mystuff{ 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    div{
+        padding: 100px 235px;
+    }
+
+    div:nth-child(even){
+        border: 1px solid black;
+    }
+}
